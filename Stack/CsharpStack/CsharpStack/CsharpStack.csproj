@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{55C7C2E1-6A31-408E-9050-CC79CE808A91}</ProjectGuid>
+    <ProjectGuid>{1AA5A6AC-2767-4576-BCA3-5591646C77AA}</ProjectGuid>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CsharpStack.Test</RootNamespace>
-    <AssemblyName>CsharpStack.Test</AssemblyName>
+    <RootNamespace>CsharpStack</RootNamespace>
+    <AssemblyName>CsharpStack</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <LangVersion>default</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -38,19 +37,15 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb">
-      <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyStackTests.cs" />
+    <Compile Include="MyStack.cs" />
+    <Compile Include="MyStackNegativeSizeException.cs" />
+    <Compile Include="MyStackOverflowException.cs" />
+    <Compile Include="MyStackUnderflowException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CsharpStack\CsharpStack.csproj">
-      <Project>{1AA5A6AC-2767-4576-BCA3-5591646C77AA}</Project>
-      <Name>CsharpStack</Name>
-    </ProjectReference>
+    <Compile Include="Stack.cs" />
+    <Compile Include="ZeroStack.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
