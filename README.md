@@ -1,2 +1,2 @@
 # FsharpWorkshop
-Contains examples and screencasts for F# workshop.
+Stack kata implementation in C# and F# .
